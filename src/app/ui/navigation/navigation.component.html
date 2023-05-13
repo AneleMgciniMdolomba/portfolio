@@ -1,19 +1,13 @@
 <nav class="animate__animated animate__fadeIn">
-  <ul>
-    <li>
-      <a routerLink="about">About Me</a>
+  <h1>{{ title }}</h1>
+  <ul class="navigation">
+
+    <li *ngFor="let menu of menuItems">
+      <a class="nav-link" [routerLink]="menu.url">{{ menu.label }}</a>
     </li>
-    <li>
-      <a routerLink="skills">Skills</a>
-    </li>
-    <li>
-      <a routerLink="projects">My Projects</a>
-    </li>
-    <li>
-      <a routerLink="contact">Contact Me</a>
-    </li>
-    <li>
-      <a routerLink="skills">Skills</a>
-    </li>
+
   </ul>
+  <button class="burger-menu" id="burger-menu">
+    <ion-icon class="bars" slot="icon-only" name="menu-outline"></ion-icon>
+  </button>
 </nav>

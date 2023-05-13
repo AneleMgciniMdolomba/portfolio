@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItems } from './navigation.model';
 
 @Component({
   selector: 'ui-navigation',
@@ -6,5 +7,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+
+  public title: string = 'Anele. M Mdolomba';
+  public menuItems: Array<MenuItems> = [];
+
+  public constructor() {
+    this.menuItems.push(
+      {
+        url: 'about',
+        label: 'About'
+      },
+      {
+        url: 'skills',
+        label: 'Skills'
+      },
+      {
+        url: 'projects',
+        label: 'Projects'
+      },
+      {
+        url: 'contact',
+        label: 'Contact'
+      },
+      {
+        url: 'blog',
+        label: 'Blog'
+      }
+
+    );
+  }
 
 }
