@@ -9,6 +9,7 @@ import { MenuItems } from './navigation.model';
 export class NavigationComponent {
 
   public title: string = 'Anele. M Mdolomba';
+  public home: string = 'home';
   public menuItems: Array<MenuItems> = [];
 
   public constructor() {

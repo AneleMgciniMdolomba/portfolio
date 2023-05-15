@@ -1,6 +1,11 @@
-<ui-header></ui-header>
+<div class="hero">
+  <img class="{{ class }}" loading="{{ loading }}" [src]="image" [alt]="altText"
+  />
+  <div class="bio animate__animated animate__shakeX">
+    <h2 class="bio-title">{{ title }}</h2>
+    <p class="bio-text">
+      {{ about }}
+    </p>
+</div>
 
-<div>
-  <p>home works!</p>
-  <router-outlet></router-outlet>
 </div>

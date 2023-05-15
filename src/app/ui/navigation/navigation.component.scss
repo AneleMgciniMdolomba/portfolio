@@ -13,6 +13,11 @@ nav {
 
 nav h1 {
   color: var(--primary-color);
+  cursor: pointer;
+}
+
+nav h1:hover {
+  color: var(--secondary-color);
 }
 
 nav a {

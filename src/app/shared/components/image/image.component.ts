@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-image',
+  selector: 'ui-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss']
 })
 export class ImageComponent {
 
+  @Input()
+  public image: string = '';
+
+  @Input()
+  public altText: string = '';
+
+  @Input()
+  public class: string = '';
+
+  @Input()
+  public loading: 'lazy' | 'eager' = 'lazy';
 }

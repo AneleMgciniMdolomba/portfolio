@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public image: string = 'assets/img/profile.jpg';
+  public altText: string = 'Hero Profile';
+  public class: string = '';
+  public loading: 'lazy' | 'eager' = 'lazy';
+  public title: string = 'About Me!';
+
+  public about: string = 'I\'m a software engineer based in South Africa, with a demonstrated history of working in the information technology and services industry.I\'ve worked with a variety of programming languages such as Java, Python, and JavaScript, as well as with cloud-based software development across different industries including Cloud Call Centres, Customs and Retail.';
 }

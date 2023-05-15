@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ResourceNotFoundComponent } from '@shared/resource-not-found/resource-not-found.component';
 
 const routes: Routes = [
+  {
+    path: '', redirectTo: 'home', pathMatch: 'full',
+  },
+  {
+    path: 'home', loadChildren: () => import('./core/home/home.module').then(m => m.HomeModule)
+  },
   {
     path: 'about', loadChildren: () => import('./core/about/about.module').then(m => m.AboutModule)
   },
@@ -16,6 +23,9 @@ const routes: Routes = [
   },
   {
     path: 'contact', loadChildren: () => import('./core/contact/contact.module').then(m => m.ContactModule)
+  },
+  {
+    path: '**', component: ResourceNotFoundComponent
   }
 ];
 
