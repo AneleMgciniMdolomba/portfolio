@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UiComponentsModule } from '@ui/ui.components.module';
 import { ResourceNotFoundModule } from '@shared/resource-not-found/resource-not-found.module';
 import { SharedComponentsModule } from '@shared/shared-components.module';
+import { SocialModule } from '@shared/components/social/social.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SharedComponentsModule } from '@shared/shared-components.module';
     AppRoutingModule,
     UiComponentsModule,
     ResourceNotFoundModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    SocialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,8 @@
-<p>social works!</p>
+<div class="socials">
+
+  <a *ngFor="let item of socialMediaLinks" [href]="item.url" target="{{ item.target }}" class="socicon">
+    <span>
+      <i [class]="item.icon"></i>
+    </span>
+  </a>
+</div>
