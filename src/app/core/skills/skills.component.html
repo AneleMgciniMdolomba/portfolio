@@ -1,7 +1,29 @@
-<div class="tech-stack">
+<div class="tech-stack-header">
   <h2>Frequently Used Tech stack</h2>
 
   <div class="tech-stack-wrapper">
-    
+    <div class="first animate__animated animate__pulse">
+
+      <div *ngFor="let item of top">
+        <img [src]="item.url"
+            [alt]="item.alt"
+            loading="lazy"
+            class="icon icon-card"
+          />
+      </div>
+
+    </div>
+
+    <div class="second animate__animated animate__pulse">
+
+      <div *ngFor="let item of bottom">
+        <img [src]="item.url"
+            [alt]="item.alt"
+            loading="lazy"
+            class="icon icon-card"
+          />
+      </div>
+
+    </div>
   </div>
 </div>

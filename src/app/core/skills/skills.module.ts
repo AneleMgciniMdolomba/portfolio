@@ -8,7 +8,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [],
+  declarations: [ SkillsComponent ],
   imports: [
     RouterModule.forChild(routes),
     CommonModule
